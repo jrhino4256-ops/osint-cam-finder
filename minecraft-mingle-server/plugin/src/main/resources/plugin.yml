@@ -1,0 +1,15 @@
+name: Mingle
+version: ${project.version}
+main: dev.mingle.MinglePlugin
+api-version: '1.21'
+load: STARTUP
+description: Squid Game style "Mingle" minigame - spin the carousel, hear the number, lock yourself in a room with exactly that many players.
+commands:
+  mingle:
+    description: Mingle minigame commands
+    usage: /mingle <join|leave|status|start|stop|rebuild|reload>
+    aliases: [mg]
+permissions:
+  mingle.admin:
+    description: Start/stop games and rebuild the arena
+    default: op

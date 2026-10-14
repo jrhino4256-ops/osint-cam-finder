@@ -1,0 +1,35 @@
+# ------------------------------------------------------------------
+#  Mingle - configuration
+# ------------------------------------------------------------------
+
+# Name of the void world the arena + lobby are generated in.
+world: mingle
+
+arena:
+  # Radius (blocks) of the spinning carousel in the middle.
+  carousel-radius: 9
+  # Width of the open floor between the carousel and the rooms.
+  ring-gap: 6
+  # Number of rooms around the edge. More rooms = more tactics.
+  rooms: 16
+  # Interior size of each room (square, blocks).
+  room-size: 3
+  # Room interior height.
+  room-height: 3
+
+game:
+  # Players needed before the lobby countdown starts.
+  min-players: 2
+  # Lobby countdown (seconds) once min-players is reached.
+  lobby-countdown: 30
+  # How long the carousel spins each round (seconds).
+  spin-time: 12
+  # Time players get to find a room once the number is called (seconds).
+  find-time: 20
+  # Smallest / largest group size that can be called.
+  min-number: 2
+  max-number: 6
+  # Game ends when this many (or fewer) players remain.
+  winners: 1
+  # Push players around while the carousel spins.
+  spin-push: true

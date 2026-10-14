@@ -1,0 +1,4 @@
+plugin/target/
+server/*
+!server/server.properties
+!server/bukkit.yml
